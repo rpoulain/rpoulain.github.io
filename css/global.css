@@ -1,0 +1,237 @@
+/********************************************************************/
+/****************************GENERAL*********************************/
+/********************************************************************/
+
+html, body {
+    height:100%;
+    margin:0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+    font-family:"Raleway";
+    font-size:15px;
+    color:#424242;
+    background: #FFFFFF;
+    font-weight : 400;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear:both;
+}
+h2{
+    font-size: 30px;
+    color: #424242;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+h3{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 500;
+}
+h4{
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    padding-top: 5px;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: .45s ease-in-out;
+   -moz-transition: .45s ease-in-out;
+   -webkit-transition: .45s ease-in-out;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+a:hover{
+    border-bottom: 1px dashed #01b0ff;
+    color : #01b0ff
+}
+p{
+    line-height: 25px;
+}
+section{
+    padding: 42px 0;
+    border-bottom: 1px solid #D8D8D8;
+    width: 100%;
+}
+section:first-child{
+}
+section:last-child{
+    border:none;
+}
+.underlined{
+    border-bottom: 1px dashed #424242;
+    font-weight: 600;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+#left-col{
+    height:100%;
+    background:#364050;
+    width:25%;
+    float:left;
+    text-align: center;
+    position: relative;
+}
+#center-left{
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 20px;
+    font-size:18px;
+    color : white;
+}
+#right-col{
+    height:100%;
+    background:#FFF;
+    width:75%;
+    float:left;
+    text-align: left;
+    padding: 0 50px;
+    overflow: auto;
+    position: relative;
+}
+#left-col h2{
+    color:white;
+}
+#logo{
+    width:230px;
+    height: 45px;
+    margin : 0 auto;
+    background: url('../images/logo-in-menu.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    
+}
+#photoRaph{
+    width:200px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+#icons{
+    margin-top : 75px;
+    text-align: center;
+}
+#icons .iconify{
+    font-size: 40px;
+    padding: 0 4px;
+}
+#icons a{
+    padding-bottom: 4px;
+    margin : 0 10px;
+}
+#menu {
+    position: fixed;
+    background: #FFF;
+    top:0;
+    width:100%;
+    border-top : 1px solid #D8D8D8;
+    border-bottom : 1px solid #D8D8D8;
+    z-index: 9999;
+}
+#menu a{
+    margin : 0 10px;
+    line-height: 40px;
+    display: inline-block;
+}
+#menuLink{
+    display: none !important;
+}
+#icons a:hover{
+    color:white;
+}
+#wrapping-right{
+    max-width: 1000px;
+    padding-top: 42px;
+}
+#wrapping-right a{
+    border-bottom: 1px dashed #424242;
+}
+#wrapping-right a:hover{
+    border-color: #01b0ff;  
+}
+/********************************************************************/
+/**************************FIN GENERAL*******************************/
+/********************************************************************/
+
+#about-me p{
+    padding : 5px 0;
+}
+
+/********************************************************************/
+/******************************DEBUT EVENT***************************/
+/********************************************************************/
+
+.single-event{
+    margin: 5px 0;
+    line-height: 25px;
+    position: relative;
+    display: inline-block;
+}
+.date-event{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    left : 0px;
+}
+.text-event{
+    border-left: 1px solid #929292;
+    padding-left:15px;
+    margin-left: 115px;
+}
+.text-event-nodate{
+    border-left: 1px solid #929292;
+    padding-left:15px;
+}
+.text-event h4, .text-event-nodate h4 {
+    font-size: 15px;
+    padding: 0 0 2px 0;
+    color:#424242;
+    font-weight: 600;
+}
+.text-event p, .text-event-nodate p{
+    padding: 0;
+}
+
+/********************************************************************/
+/**************************FIN EVENT*********************************/
+/********************************************************************/
+
+#footer{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+
+#chevron-footer{
+    background: url('../images/chevron-top.png') no-repeat;
+    width:42px;
+    height: 34px;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}

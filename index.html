@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Raphaël Poulain</title>
+    <!--<link rel="icon" type="image/png" href="favicon.png" />-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+</head>
+<body>
+    <div id="left-col">
+        <div id="center-left">
+            <div id="logo"></div>
+            <div id="photoRaph">
+                <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+                            <image xlink:href="images/raphPhoto.jpg" x="-25" width="150" height="100" />
+                        </pattern>
+                    </defs>
+                    <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
+                </svg>
+            </div>
+            <h3>PhD Student in Computer Science</h3>
+            <h3><a target="_blank" href="https://www.udel.edu">University of Delaware</a></h3>
+            <h4><a target="_blank" href="https://www.cis.udel.edu">Department of Computer and Information Sciences</a></h4>
+            <h4>XXX Smith Hall</h4>
+            <h4>poulain&lt;at&gt;udel&lt;dot&gt;edu</h4>
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/raphael-poulain/" target="_blank">
+                    <span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                </a>
+                <a href="https://github.com/GotSave" target="_blank">
+                    <span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span>
+                </a>
+                <a href="" target="_blank">
+                    <span class="iconify" data-icon="simple-icons:googlescholar" data-inline="false"></span>
+                </a>
+            </div>
+            <!--<div id="menu">
+                <a href="#about-me">About Me</a>
+                <a href="#latest-news">Latest News</a>
+                <a href="#">Experience</a>
+                <a href="#">Projects</a>
+                <a href="#">Teaching</a>
+                <a href="#">Resume</a>
+            </div>-->
+        </div>    
+    </div>
+    <div id="right-col">
+        <div id="menu">
+            <a id="menuLink">Menu</a>
+            <div id="menuDesk">
+                <a href="#about-me">About Me</a>
+                <a href="#latest-news">Latest News</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#">Resume</a>
+            </div>
+        </div>
+        <div id="wrapping-right">   
+            <section id="about-me">
+                <h2 class="uppercase">About Me</h2>
+                <p>
+                    I am a first-year PhD student in Computer Science in the <a target="_blank" href="https://www.cis.udel.edu">Department of Computer and Information Sciences</a> at the <a target="_blank" href="https://www.udel.edu">University of Delaware</a>.<br />
+                    My research interests lie in <span class="underlined">Machine Learning and Data Mining</span>, and <span class="underlined">Artificial Intelligence</span>, as well as their applications in <span class="underlined">Bioinformatics</span>.
+                </p>
+                <p>
+                    I received my Bachelor of Engineering Science and my Master of Science in Engineering (Computational Finance track) from <a target="_blank" href="https://www.efrei.fr">EFREI Paris</a> in 2018 and 2020.
+                    When I'm not working you can find me playing tennis, taking photos, watching the Montreal Canadiens, or cheering for the French National Football (soccer) team.
+                </p>
+            </section>
+            <section id="latest-news">
+                <h2 class="uppercase">Latest News</h2>
+                <div class="single-event">
+                    <div class="date-event">07/21/2020</div>
+                    <div class="text-event">
+                        <p>Joined the Department of Computer and Information Sciences @ University of Delaware as a PhD Student.</p>
+                    </div>
+                </div>
+                <div class="single-event">
+                    <div class="date-event">03/23/2020</div>
+                    <div class="text-event">
+                        <p>Started my internship as a Software Engineer at <a href="https://www.euronext.com" target="_blank">Euronext</a> within the Data Shop team.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <h2 class="uppercase">Experience</h2>
+                <div class="single-event">
+                    <div class="date-event">Summer 2020</div>
+                    <div class="text-event">
+                        <h4 class="uppercase">Euronext - Software Engineer Intern</h4>
+                        <p>
+                            I built a testing automation tool using Python and Cucumber to help the Data Shop team running their unit tests during the development of the company's new on-demand market data platform.</p>
+                    </div>
+                </div>
+                <div class="single-event">
+                    <div class="date-event">Summer 2019</div>
+                    <div class="text-event">
+                        <h4 class="uppercase">Euroenxt - Software Engineer Intern</h4>
+                        <p>
+                             I built an architecture dataflow visualization tool for their trading platform, Optiq to help engineers visualize how each applications communicate with each other and follow a specific data stream from its creation to its endpoint. I modeled the trading platform's architecture using OrientDB, a Graph Database, and used both Node.js and Angular. I also developped an API around my platform to keep it up-to-date automatically.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h2 class="uppercase">Projects</h2>
+                <div class="single-event">
+                    <div class="text-event-nodate">
+                        <h4 class="uppercase">NHL Players’ Salaries Prediction Model</h4>
+                        <p>
+                             As a personal projet to introduce myself to Machine Learning algorithms, I used a Random Forest Regression model to predict NHL Players' salaries given their in-game statistics and personal information. I took in consideration the players' birthday year, average time on ice, and the team’s number of goals while the player was on the ice. I also used a Google News API to simulate the player’s popularity by getting the number of articles he appeared in during the season.
+                        </p>
+                    </div>
+                </div>
+                <div class="single-event">
+                    <div class="text-event-nodate">
+                        <h4 class="uppercase">Enrie : Self Driving Cars</h4>
+                        <p>
+                             For our Junior's year Capstone project, we programmed a parking lot simulation populated by autonomous cars to teach them how to park using a genetic algorithm. We used Javascript for both the algorithm itself and the visuals of our applications with the P5 library.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="teaching">
+                <h2 class="uppercase">Teaching</h2>
+                <div class="single-event">
+                    <div class="date-event">Fall 2020</div>
+                    <div class="text-event">
+                        <h4><a href="#" target="_blank">CISCXXX : Computer Science YYY</a></h4>
+                        <p>Teaching Assistant</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="chevron-footer" onclick="topFunction()"></div>
+        <div id="footer">&copy; Raphael Poulain 2020</div>
+    </div>
+    <div class="clear"></div>
+</body>
+</html>
