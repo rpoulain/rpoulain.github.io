@@ -1,55 +1,3 @@
-@media only screen and (max-width: 600px) {
-    #menu-responsive{
-        position: fixed;
-        top: 0;
-        height: 45px;
-        width: 100%;
-        background: #FFFFFF;
-        border-bottom:1px solid #dddddd;
-        box-shadow: 1px 1px 1px #eeeeee;
-        display:block;
-        z-index:9;
-        transition: 1s ease-in-out;
-        -moz-transition: 1s ease-in-out;
-        -webkit-transition: 1s ease-in-out;
-    }
-    #menu-responsive-click{
-        height: 40px;
-        width: 40px;
-        background: url('../images/menu-responsive.png');
-        position: absolute;
-        top:2.5px;
-        right: 10px;
-        cursor: pointer;
-    }
-    #menu-responsive-list{
-        display: none;   
-        width:100%;
-        height: auto;
-        box-shadow: 1px 1px 1px #eeeeee;
-        margin-top: 45px;
-    }
-    #menu-responsive-list li{
-        width:100%;
-        height: 45px;
-        border-bottom:1px solid #dddddd;
-        background: #FFF;
-        text-align: center;
-        line-height: 45px;
-        text-transform: uppercase;
-    }
-    #menu-responsive-list li a{
-        width:100%;
-        height: 45px;
-        display: block;
-    }
-    #menu-fixed{
-        display: none !important;   
-    }
-    .menu2, .menu2-footer{
-        display: none;   
-    }
-}
 @media only screen and (max-width: 1000px) {
     #left-col, #right-col{
         width: 100%;
@@ -91,12 +39,6 @@
     }
     #wrapping-right{
         padding-top:0;
-    }
-    body{
-        overflow: auto;
-    }
-    #chevron-footer{
-        display: none;
     }
     section{
         padding:100px 0 !important;
@@ -156,5 +98,10 @@
     }
     #menuOpen {
         display: inline;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #menuDesk{
+        display: block !important;
     }
 }
