@@ -59,7 +59,7 @@
         height: auto;
     }
     #left-col{
-        padding-top: 122px;
+        padding: 122px 0 20px 0;
     }
     #center-left{
         width: 100%;
@@ -75,6 +75,7 @@
     }
     #menuLink{
         display: block !important;
+        position: relative;
     }
     #menuDesk{
         display: none;
@@ -140,5 +141,20 @@
     }
     #projects .single-event:last-child, #projects .single-event:last-child .text-event-nodate{
         margin-bottom: 0;
+    }
+    #menuHamburger{
+        right: 50px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        color : #364050;
+        line-height: 1px;
+    }
+    #menuClose {
+        display: none;
+    }
+    #menuOpen {
+        display: inline;
     }
 }
