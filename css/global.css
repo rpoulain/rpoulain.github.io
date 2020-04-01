@@ -226,6 +226,7 @@ section:last-child{
     width: 100%;
     font-size:12px;
     text-align: center;
+    padding:10px 0;
 }
 
 #chevron-footer{
