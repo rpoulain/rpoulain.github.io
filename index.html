@@ -60,7 +60,7 @@
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#teaching">Teaching</a>
-                <a href="#">Resume</a>
+                <a href="#" id="resumeLink">Resume</a>
             </div>
         </div>
         <div id="wrapping-right">   
@@ -154,29 +154,36 @@
                         <p>Teaching Assistant</p>
                     </div>
                 </div>
-            </section>
-            <div id="adobe-dc-view" style="width: 800px;"></div>
-            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-            <script type="text/javascript">
-                document.addEventListener("adobe_dc_view_sdk.ready", function () {
-                    var adobeDCView = new AdobeDC.View({
-                        clientId: "d09fb023d1174e4f834386c9b217b9d1",
-                        divId: "adobe-dc-view"
-                    });
-                    adobeDCView.previewFile({
-                        content: { location: { url: "https://gotsave.github.io/resumeRaphaelPoulain.pdf" } },
-                        metaData: { fileName: "resumeRaphaelPoulain.pdf" }
-                    }, {
-                        embedMode: "IN_LINE",
-                        showDownloadPDF: false,
-                        showPrintPDF: false
-                    });
-                });
-            </script>
+            </section> 
         </div>
         <div id="chevron-footer" onclick="topFunction()"></div>
         <div id="footer">&copy; Raphael Poulain 2020</div>
     </div>
     <div class="clear"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Resume</h2>
+            </div>
+            <div class="modal-body">
+                <div id="pdf"></div>
+            </div>
+        </div>
+    </div> 
+    <!-- insert just before the closing body tag </body> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js'></script>
+    <script>
+        //Be sure your document contains an element with the CSS selector "#pdf"
+        var options = {
+            pagemode: "thumbs",
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            view: "FitV"
+        };
+
+        var myPDF = PDFObject.embed("https://gotsave.github.io/resumeRaphaelPoulain.pdf", "#pdf", options);
+    </script>
 </body>
 </html>
