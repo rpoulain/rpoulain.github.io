@@ -216,7 +216,18 @@ section:last-child{
 .text-event p, .text-event-nodate p{
     padding: 0;
 }
-
+#latest-news .single-event:last-child, #latest-news .single-event:last-child .text-event{
+    margin-bottom: 0;
+}
+#teaching .single-event:last-child, #teaching .single-event:last-child .text-event{
+    margin-bottom: 0;
+}
+#experience .single-event:last-child, #experience .single-event:last-child .text-event{
+    margin-bottom: 0;
+}
+#projects .single-event:last-child, #projects .single-event:last-child .text-event-nodate{
+    margin-bottom: 0;
+}
 /********************************************************************/
 /**************************FIN EVENT*********************************/
 /********************************************************************/
