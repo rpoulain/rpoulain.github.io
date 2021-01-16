@@ -14,7 +14,7 @@ html, body {
 }
 body{
     font-family:"Raleway";
-    font-size:15px;
+    font-size:17px;
     color:#424242;
     background: #FFFFFF;
     font-weight : 400;
@@ -31,19 +31,19 @@ img {
     clear:both;
 }
 h2{
-    font-size: 30px;
+    font-size: 32px;
     color: #424242;
     padding-bottom: 15px;
     letter-spacing: 2px;
     font-weight: 600;
 }
 h3{
-    font-size: 20px;
+    font-size: 22px;
     color: #FFF;
     font-weight: 500;
 }
 h4{
-    font-size: 16px;
+    font-size: 18px;
     color: #FFF;
     font-weight: 400;
     padding-top: 5px;
@@ -98,7 +98,7 @@ section:last-child{
     transform: translateY(-50%);
     position: absolute;
     padding: 20px;
-    font-size:18px;
+    font-size:20px;
     color : white;
 }
 #right-col{
@@ -133,7 +133,7 @@ section:last-child{
     text-align: center;
 }
 #icons .iconify{
-    font-size: 40px;
+    font-size: 42px;
     padding: 0 4px;
 }
 #icons a{
@@ -186,7 +186,7 @@ section:last-child{
 /********************************************************************/
 
 .single-event{
-    margin: 5px 0;
+    margin: 10px 0;
     line-height: 25px;
     position: relative;
     display: inline-block;
@@ -208,7 +208,7 @@ section:last-child{
     padding-left:15px;
 }
 .text-event h4, .text-event-nodate h4 {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 0 2px 0;
     color:#424242;
     font-weight: 600;
@@ -227,6 +227,12 @@ section:last-child{
 }
 #projects .single-event:last-child, #projects .single-event:last-child .text-event-nodate{
     margin-bottom: 0;
+}
+.single-publi{
+    margin: 10px 0;
+}
+.text-event-nodate .single-publi:last-child{
+    margin-bottom: 0px;
 }
 /********************************************************************/
 /**************************FIN EVENT*********************************/
@@ -282,7 +288,7 @@ section:last-child{
 .close {
     color: #FFFFFF;
     float: right;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 600;
     padding: 5px 0;
     transition: .45s ease-in-out;
@@ -305,7 +311,7 @@ section:last-child{
 #footer{
     width: 100%;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 0;
 }
 
