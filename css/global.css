@@ -120,7 +120,7 @@ section:last-child{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
-    
+
 }
 #photoRaph{
     width:200px;
@@ -171,7 +171,7 @@ section:last-child{
     border-bottom: 1px dashed #424242;
 }
 #wrapping-right a:hover{
-    border-color: #01b0ff;  
+    border-color: #01b0ff;
 }
 /********************************************************************/
 /**************************FIN GENERAL*******************************/
@@ -232,6 +232,16 @@ section:last-child{
 }
 .single-publi{
     margin: 10px 0;
+}
+.publi_button{
+  height: 30px;
+  border: 1px solid !important;
+  padding:5px;
+  margin-right:10px;
+  text-align: center;
+}
+.blank_space{
+  margin-top: 10px;
 }
 .text-event-nodate .single-publi:last-child{
     margin-bottom: 0px;
