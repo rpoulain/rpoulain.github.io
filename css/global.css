@@ -79,7 +79,7 @@ section:last-child{
 }
 .underlined{
     border-bottom: 1px dashed #424242;
-    font-weight: 500;
+    font-weight: 600;
 }
 .uppercase{
     text-transform: uppercase;
