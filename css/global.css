@@ -231,6 +231,9 @@ section:last-child{
     margin-bottom: 0;
 }
 .single-publi{
+    margin: 10px 0 15px 0;
+}
+.single-publi:last-child{
     margin: 10px 0;
 }
 .publi_button{
