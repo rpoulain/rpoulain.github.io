@@ -233,9 +233,6 @@ section:last-child{
 .single-publi{
     margin: 10px 0 15px 0;
 }
-.single-publi:last-child{
-    margin: 10px 0;
-}
 .publi_button{
   height: 30px;
   border: 1px solid !important;
