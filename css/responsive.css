@@ -51,6 +51,8 @@
         transform: none;
         position: relative;
         margin-bottom: 15px;
+        width:100%;
+        text-align: left;
     }
     .text-event{
         margin-left:0;
