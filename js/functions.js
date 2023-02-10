@@ -14,23 +14,29 @@ $(document).ready(function(){
 function topFunction() {
   $('html, body').animate({ scrollTop: 0 }, 700);
 };
- $(document).ready(function() { 
-    $("#menuLink").click(function() { 
-        $("#menuDesk").slideToggle(); 
-        $("#menuOpen").fadeToggle("slow", "linear"); 
-        $("#menuClose").fadeToggle("slow", "linear"); 
-    }); 
+ $(document).ready(function() {
+    $("#menuLink").click(function() {
+        $("#menuDesk").slideToggle();
+        $("#menuOpen").fadeToggle("slow", "linear");
+        $("#menuClose").fadeToggle("slow", "linear");
+    });
 });
-$(document).ready(function() { 
-    $("#menuDesk").click(function() { 
+$(document).ready(function() {
+    $("#menuDesk").click(function() {
         if ($(window).width() < 1000) {
-            $("#menuDesk").slideToggle(); 
-            $("#menuOpen").fadeToggle("slow", "linear"); 
-            $("#menuClose").fadeToggle("slow", "linear"); 
+            $("#menuDesk").slideToggle();
+            $("#menuOpen").fadeToggle("slow", "linear");
+            $("#menuClose").fadeToggle("slow", "linear");
         }
-    }); 
+    });
+
+
 });
-window.onload = function(){ 
+
+
+
+window.onload = function(){
+
     if(myPDF){
         // Get the modal
         var modal = document.getElementById("myModal");
@@ -38,30 +44,48 @@ window.onload = function(){
         // Get the button that opens the modal
         var btn = document.getElementById("resumeLink");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
         // When the user clicks on the button, open the modal
         btn.onclick = function() {
           modal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
     }
     else{
         $(document).ready(function(){
             $('#resumeLink').attr('target', '_blank');
             $('#resumeLink').attr('href', 'https://gotsave.github.io/resumeRaphaelPoulain.pdf');
         });
+    }
+
+    var modall = document.getElementById("citeModal");
+
+    $(".citeLink").on('click', function(event){
+      modall.style.display = "block";
+    });
+
+    $(".close").on('click', function(event){
+      modall.style.display = "none";
+      if (myPDF) {
+        modal.style.display = "none";
+      }
+    });
+
+
+    document.onkeydown = function (evt) {
+        if (evt.keyCode == 27) {
+          modall.style.display = "none";
+          if (myPDF) {
+            modal.style.display = "none";
+          }
+        }
+    };
+
+    window.onclick = function(event) {
+      if (event.target == modall) {
+        modall.style.display = "none";
+      }
+      if (myPDF && event.target == modal) {
+        modal.style.display = "none";
+      }
     }
 };

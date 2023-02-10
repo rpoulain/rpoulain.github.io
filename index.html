@@ -13,6 +13,8 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTKY9B5F2T"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -180,6 +182,14 @@
                 </div>
             </section>
             <section id="publications">
+              <bibtex src="bib1.bib"></bibtex>
+
+              <textarea id="bibtex_input" style="display:none;">
+              @book{book1,
+                author = "Donald Knuth",
+                title = "Concrete Mathematics"
+              }
+              </textarea>
               <h2 class="uppercase">Publications</h2>
               <div class="single-event">
                 <div class="text-event-nodate">
@@ -193,7 +203,7 @@
                       <a class='publi_button' href="https://github.com/healthylaife/MIMIC-IV-Data-Pipeline" target="_blank">Code</a>
                     </div>
                   </div>
-                  
+
                   <div class="single-publi">
                     <p>
                       <b>R. Poulain</b>, M. Gupta, and R. Beheshti. ”Few-Shot Learning with Semi-Supervised Transformers for Electronic Health Records”. MLHC 2022.
@@ -252,6 +262,17 @@
             </div>
             <div class="modal-body">
                 <div id="pdf"></div>
+            </div>
+        </div>
+    </div>
+    <div id="citeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Cite</h2>
+            </div>
+            <div class="modal-body">
+
             </div>
         </div>
     </div>
