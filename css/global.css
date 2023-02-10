@@ -231,7 +231,7 @@ section:last-child{
     margin-bottom: 0;
 }
 .single-publi{
-    margin: 10px 0 15px 0;
+    margin: 15px 0 20px 0;
 }
 .publi_button{
   height: 30px;
@@ -243,8 +243,17 @@ section:last-child{
 .buttons_space{
   margin-top: 10px;
 }
-.text-event-nodate .single-publi:last-child{
+.text-event-nodate .bibtexentry:last-child .single-publi{
     margin-bottom: 0px;
+}
+.text-event-nodate .bibtexentry:first-child .single-publi{
+    margin-top: 5px;
+}
+span.Raphael.Poulain{
+  font-weight:600;
+}
+.bibtexraw{
+  display: none;
 }
 /********************************************************************/
 /**************************FIN EVENT*********************************/
@@ -290,6 +299,38 @@ section:last-child{
     width: 70%; /* Could be more or less, depending on screen size */
     height: 90%;
 }
+#rawbib{
+  overflow: auto;
+  border: 1px solid #929292;
+  padding: 10px;
+}
+.citecontent {
+    background-color: #FFFFFF;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    border: 1px solid #364050;
+    width: 750px; /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+
+.modal-footer{
+  width: 100%;
+  text-align: center;
+  margin-top:20px;
+}
+.modal-body-cite{
+  padding:25px;
+}
+.copy_button{
+  height: 30px;
+  border: 1px solid !important;
+  padding:5px;
+  margin-right:10px;
+  text-align: center;
+  display: inline-block;
+}
+
 
 .modal-body{
     width: 100%;

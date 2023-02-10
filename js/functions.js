@@ -1,3 +1,10 @@
+function openCite(raw) {
+    var modall = document.getElementById("citeModal");
+    modall.style.display = "block";
+    $('#rawbib').html($('#'+raw).html());
+
+};
+
 $(document).ready(function(){
     $("a").on('click', function(event) {
         if (this.hash !== "") {

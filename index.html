@@ -183,14 +183,17 @@
             </section>
             <section id="publications">
               <h2 class="uppercase">Publications</h2>
-              <bibtex src="bib1.bib"></bibtex>
               <div id="bibtex_display">
                 <div class="bibtex_template">
                   <div class="single-publi">
-                    "<span class="title"></span>". <span class="author"><span class="first_initial"></span> <span class="last"></span></span>. <span class="booktitle"></span>
+                    <p><span class="title"></span></p>
+                    <p><span class="author"><span class="first_initial"></span> <span class="last"></span></span></p>
+                    <p><span class="booktitle"></span></p>
                     <div class="buttons_space">
                       <a class='publi_button bibtexVar' href="+url+" extra="url" target="_blank">Paper</a>
                       <a class='publi_button bibtexVar' href="+code+" extra="code" target="_blank">Code</a>
+                      <span class="bibtexraw noread bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY"></span>
+                      <a class='publi_button bibtexVar citeLink' extra="BIBTEXKEY" onclick="openCite('bib+BIBTEXKEY+')">Cite</a>
                     </div>
                   </div>
                 </div>
@@ -232,13 +235,16 @@
         </div>
     </div>
     <div id="citeModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content citecontent">
             <div class="modal-header">
                 <span class="close">&times;</span>
                 <h2>Cite</h2>
             </div>
-            <div class="modal-body">
-
+            <div class="modal-body modal-body-cite">
+                <pre id="rawbib"></pre>
+                <div class="modal-footer">
+                  <a class='copy_button' onclick="navigator.clipboard.writeText($('#rawbib').html())">Copy to clipboard</a>
+                </div>
             </div>
         </div>
     </div>
