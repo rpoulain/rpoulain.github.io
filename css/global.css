@@ -324,13 +324,26 @@ span.Raphael.Poulain{
 }
 .copy_button{
   height: 30px;
+  width:160px;
   border: 1px solid !important;
   padding:5px;
   margin-right:10px;
   text-align: center;
   display: inline-block;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to right, #01b0ff 50%, white 0);
+  background-position: right;
+  transition: 0.45s, background-position 0.25s ease-in-out;
+  -moz-transition: 0.45s, background-position 0.25s ease-in-out;
+  -webkit-transition: 0.45s, background-position 0.25s ease-in-out;
 }
 
+.copy_button:focus{
+  background-position: left;
+  color:white;
+}
+.copy_button:after       { content:'Copy to Clipboard'; }
+.copy_button:focus:after { content:'Copied!'; }
 
 .modal-body{
     width: 100%;

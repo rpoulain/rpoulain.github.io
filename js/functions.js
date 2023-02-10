@@ -5,6 +5,10 @@ function openCite(raw) {
 
 };
 
+function copyClipboard(){
+  navigator.clipboard.writeText($('#rawbib').html());
+}
+;
 $(document).ready(function(){
     $("a").on('click', function(event) {
         if (this.hash !== "") {
