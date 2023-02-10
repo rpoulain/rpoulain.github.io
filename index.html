@@ -182,59 +182,24 @@
                 </div>
             </section>
             <section id="publications">
-              <bibtex src="bib1.bib"></bibtex>
-
-              <textarea id="bibtex_input" style="display:none;">
-              @book{book1,
-                author = "Donald Knuth",
-                title = "Concrete Mathematics"
-              }
-              </textarea>
               <h2 class="uppercase">Publications</h2>
-              <div class="single-event">
-                <div class="text-event-nodate">
-                  <h4 class="uppercase">2022</h4>
+              <div id="bibtex_display">
+                <div class="bibtex_template">
                   <div class="single-publi">
-                    <p>
-                      M. Gupta, B. Gallamoza, N. Cutrona, P. Dhakal, <b>R. Poulain</b>, and R. Beheshti. "An Extensive Data Processing Pipeline for MIMIC‑IV”. ML4H 2022.
-                    </p>
+                    "<span class="title"></span>". <span class="author"><span class="first_initial"></span> <span class="last"></span></span>. <span class="booktitle"></span>
                     <div class="buttons_space">
-                      <a class='publi_button' href="https://arxiv.org/abs/2204.13841" target="_blank">Paper</a>
-                      <a class='publi_button' href="https://github.com/healthylaife/MIMIC-IV-Data-Pipeline" target="_blank">Code</a>
-                    </div>
-                  </div>
-
-                  <div class="single-publi">
-                    <p>
-                      <b>R. Poulain</b>, M. Gupta, and R. Beheshti. ”Few-Shot Learning with Semi-Supervised Transformers for Electronic Health Records”. MLHC 2022.
-                    </p>
-                    <div class="buttons_space">
-                      <a class='publi_button' href="https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/62e97a83db963576550e863e/1659468419684/131+MLHC_Raphael_CEHR_GAN_BERT+%281%29.pdf" target="_blank">Paper</a>
-                      <a class='publi_button' href="https://github.com/healthylaife/CEHR-GAN-BERT" target="_blank">Code</a>
-                    </div>
-                  </div>
-                  <div class="single-publi">
-                    <p>
-                      M. Gupta, <b>R. Poulain</b>, TL. T. Phan, H. T. Bunnell and R. Beheshti. ”Flexible‑window Predictions on Electronic Health Records”. IAAI 2022.
-                    </p>
-                    <div class="buttons_space">
-                      <a class='publi_button' href="https://aaai-2022.virtualchair.net/poster_emer114" target="_blank">Paper</a>
-                      <a class='publi_button' href="https://github.com/healthylaife/FlexPrediction" target="_blank">Code</a>
+                      <a class='publi_button bibtexVar' href="+url+" extra="url" target="_blank">Paper</a>
+                      <a class='publi_button bibtexVar' href="+code+" extra="code" target="_blank">Code</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="single-event">
-                <div class="text-event-nodate">
-                  <h4 class="uppercase">2021</h4>
-                  <div class="single-publi">
-                    <p>
-                      <b>R. Poulain</b>, M. Gupta, R. Foraker, R. Beheshti. "Transformer-based Multi-target Regression on Electronic Health Records for Primordial Prevention of Cardiovascular Disease". IEEE BIBM 2021.
-                    </p>
-                    <div class="buttons_space">
-                      <a class='publi_button' href="https://ieeexplore.ieee.org/abstract/document/9669441" target="_blank">Paper</a>
-                      <a class='publi_button' href="https://github.com/healthylaife/TransformersMTR" target="_blank">Code</a>
-                    </div>
+                <div class="bibtex_structure">
+                  <div class="group year single-event" extra="DESC number">
+                      <div class="text-event-nodate">
+                          <h4 class="uppercase title"></h4>
+                          <div class="templates">
+                          </div>
+                      </div>
                   </div>
                 </div>
               </div>

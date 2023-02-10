@@ -1,3 +1,18 @@
+@InProceedings{pmlr-v193-gupta22a,
+  title = 	 {An Extensive Data Processing Pipeline for MIMIC-IV},
+  author =       {Gupta, Mehak and Gallamoza, Brennan and Cutrona, Nicolas and Dhakal, Pranjal and Poulain, Raphael and Beheshti, Rahmatollah},
+  booktitle = 	 {Proceedings of the 2nd Machine Learning for Health symposium},
+  pages = 	 {311--325},
+  year = 	 {2022},
+  editor = 	 {Parziale, Antonio and Agrawal, Monica and Joshi, Shalmali and Chen, Irene Y. and Tang, Shengpu and Oala, Luis and Subbaswamy, Adarsh},
+  volume = 	 {193},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {28 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v193/gupta22a/gupta22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v193/gupta22a.html},
+  code = 	 {https://github.com/healthylaife/MIMIC-IV-Data-Pipeline},
+}
 
 @InProceedings{pmlr-v182-poulain22a,
   title = 	 {Few-Shot Learning with Semi-Supervised Transformers for Electronic Health Records},
@@ -12,5 +27,31 @@
   publisher =    {PMLR},
   pdf = 	 {https://proceedings.mlr.press/v182/poulain22a/poulain22a.pdf},
   url = 	 {https://proceedings.mlr.press/v182/poulain22a.html},
-  abstract = 	 {With the growing availability of Electronic Health Records (EHRs), many deep learning methods have been developed to leverage such datasets in medical prediction tasks. Notably, transformer-based architectures have proven to be highly effective for EHRs. Transformer-based architectures are generally very effective in “transferring” the acquired knowledge from very large datasets to smaller target datasets through their comprehensive “pre-training” process. However, to work efficiently, they still rely on the target datasets for the downstream tasks, and if the target dataset is (very) small, the performance of downstream models can degrade rapidly. In biomedical applications, it is common to only have access to small datasets, for instance, when studying rare diseases, invasive procedures, or using restrictive cohort selection processes. In this study, we present CEHR-GAN-BERT, a semi-supervised transformer-based architecture that leverages both in and out-of-cohort patients to learn better patient representations in the context of few-shot learning. The proposed method opens new learning opportunities where only a few hundred samples are available. We extensively evaluate our method on four prediction tasks and three public datasets showing the ability of our model to achieve improvements upwards of 5% on all performance metrics (including AUROC and F1 Score) on the tasks that use less than 200 annotated patients during the training process.}
+  code = 	 {https://github.com/healthylaife/CEHR-GAN-BERT},
 }
+
+@InProceedings{Gupta_Poulain_Phan_Bunnell_Beheshti_2022,
+  title={Flexible-Window Predictions on Electronic Health Records},
+  volume={36},
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/21520},
+  code={https://github.com/healthylaife/FlexPrediction},
+  DOI={10.1609/aaai.v36i11.21520},
+  number={11},
+  booktitle = {Proceedings of the Thirty-Fourth Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-22)},
+  author={Gupta, Mehak and Poulain, Raphael and Phan, Thao-Ly T. and Bunnell, H. Timothy and Beheshti, Rahmatollah},
+  year={2022},
+  month={Jun.},
+  pages={12510-12516} }
+
+  @inproceedings{TransformersMTR,
+    author={Poulain, Raphael and Gupta, Mehak and Foraker, Randi and Beheshti, Rahmatollah},
+    booktitle={2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+    title={Transformer-based Multi-target Regression on Electronic Health Records for Primordial Prevention of Cardiovascular Disease},
+    year={2021},
+    volume={},
+    number={},
+    pages={726-731},
+    doi={10.1109/BIBM52615.2021.9669441},
+    url = {https://ieeexplore.ieee.org/abstract/document/9669441},
+    code = {https://github.com/healthylaife/TransformersMTR}
+  }
