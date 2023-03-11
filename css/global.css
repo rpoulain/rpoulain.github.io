@@ -298,6 +298,8 @@ span.Raphael.Poulain{
     border: 1px solid #364050;
     width: 70%; /* Could be more or less, depending on screen size */
     height: 90%;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
 }
 #rawbib{
   overflow: auto;
@@ -347,7 +349,7 @@ span.Raphael.Poulain{
 
 .modal-body{
     width: 100%;
-    height: 100%;
+    height: 100.6%;
 }
 
 /* The Close Button */
